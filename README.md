@@ -48,6 +48,7 @@
 <!-- Insert screenshot here -->
 Not much to say about this project. Just a hacky system information display implementation.
 I didn't try to make this dependency-less at all. This was just a hacky thursday-night project.
+Also this was 100% inspired by u/jizcu over on r/unixporn. Thanks for the inspo!
 
 ### Built With
 
