@@ -72,7 +72,7 @@ git clone https://github.com/VladCuciureanu/catfetch.git && cd catfetch
 ```sh
 pip3 install -r requirements.txt
 ```
-3.1 Install wmctrl:
+3. Install wmctrl:
 ```
 sudo apt install wmctrl
 ```
