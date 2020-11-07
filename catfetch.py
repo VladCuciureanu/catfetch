@@ -85,10 +85,10 @@ print(str.ljust(uptime, column_count-14)[0:column_count-14])
 print()
 
 symbol = "⚞^..^⚟"
-offset = (column_count - len(symbol)*7)/7-1
+offset = (column_count - len(symbol)*7)/7-2
 
 # Print top boxes
-for _ in range(offset//2):
+for _ in range(int(offset//2)):
         print(' ',end='')
 for _ in range(1,8):
     set_text_style(_, 0 ,0)
@@ -97,12 +97,12 @@ for _ in range(1,8):
         print('═',end='')
     print('╗',end='')
     if _ < 7:
-        for _ in range(offset):
+        for _ in range(int(offset)):
             print(' ',end='')
 print()
 
 # Print middle boxes
-for _ in range(offset//2):
+for _ in range(int(offset//2)):
         print(' ',end='')
 for _ in range(1,8):
     set_text_style(_, 0 ,0)
@@ -110,12 +110,12 @@ for _ in range(1,8):
     print(symbol,end='')
     print('║',end='')
     if _ < 7:
-        for _ in range(offset):
+        for _ in range(int(offset)):
             print(' ',end='')
 print()
 
 # Print bottom boxes
-for _ in range(offset//2):
+for _ in range(int(offset//2)):
         print(' ',end='')
 for _ in range(1,8):
     set_text_style(_, 0 ,0)
@@ -124,7 +124,7 @@ for _ in range(1,8):
         print('═',end='')
     print('╝',end='')
     if _ < 7:
-        for _ in range(offset):
+        for _ in range(int(offset)):
             print(' ',end='')
 
 
