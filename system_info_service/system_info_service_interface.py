@@ -24,7 +24,7 @@ class SystemInfoServiceInterface:
         pass
 
     @staticmethod
-    def get_dewm():
+    def get_de_wm():
         pass
 
     @staticmethod

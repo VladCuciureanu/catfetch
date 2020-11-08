@@ -31,7 +31,7 @@ class WindowsSystemInfoService(SystemInfoServiceInterface):
         return os.popen('(dir 2>&1 *`|echo CMD);&<# rem #>echo PowerShell').read().strip()
 
     @staticmethod
-    def get_dewm():
+    def get_de_wm():
         return 'Windows Shell'  # Could find a way to add more shell replacements but not worth my time ATM.
 
     @staticmethod

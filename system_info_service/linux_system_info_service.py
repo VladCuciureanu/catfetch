@@ -35,7 +35,7 @@ class LinuxSystemInfoService(SystemInfoServiceInterface):
         return os.popen('pstree -sA $$ | awk -F \"---\" \'{ print $2 }\'').read().strip()
 
     @staticmethod
-    def get_dewm():
+    def get_de_wm():
         # TODO: Make it so you dont use wmctrl
         return os.popen('wmctrl -m').readline()[6:].strip()
 

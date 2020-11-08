@@ -43,7 +43,7 @@ print(str.ljust(SystemInfoService.get_terminal(), column_count - 14)[0:column_co
 set_text_style(2)
 print(str.ljust("DE / WM", 8), end="  >>  ")
 set_text_style(3)
-print(str.ljust(SystemInfoService.get_dewm(), column_count - 14)[0:column_count - 14])
+print(str.ljust(SystemInfoService.get_de_wm(), column_count - 14)[0:column_count - 14])
 # Hardware
 set_text_style(2)
 print(str.ljust("Hardware", 8), end="  >>  ")
