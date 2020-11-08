@@ -20,13 +20,11 @@ class WindowsSystemInfoService(SystemInfoServiceInterface):
 
     @staticmethod
     def get_os():
-        # TODO: Make faster
-        return os.popen('systeminfo').readlines()[2].strip()[8:].strip()
+        return os.popen('wmic os get Caption /value').read().split('=')[1].strip()
 
     @staticmethod
     def get_kernel():
-        # TODO: Make faster
-        return os.popen('systeminfo').readlines()[3].strip()[11:].strip()
+        return os.popen('ver').read().replace("]", "[").split("[")[1]
 
     @staticmethod
     def get_terminal():
