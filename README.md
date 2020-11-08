@@ -17,7 +17,7 @@
     <br />
     <br />
     <a href="https://www.python.org/downloads/release/python-360">
-      <img alt="Made with: Python 3.6" src="https://img.shields.io/badge/python-3.6-blue.svg" target="_blank" />
+      <img alt="Made with: Python 3.9" src="https://img.shields.io/badge/python-3.9-blue.svg" target="_blank" />
     </a>
     <!--
     <a href="https://www.gnu.org/licenses/gpl-3.0">
@@ -52,7 +52,7 @@ Also this was inspired by u/jizcu over on r/unixporn. Thanks for the inspo!
 
 ### Built With
 
-* [Python 3.6](https://www.python.org/downloads/release/python-360/)
+* [Python 3.9](https://www.python.org/downloads/release/python-390/)
 
 
 
