@@ -17,7 +17,7 @@
     <br />
     <br />
     <a href="https://www.python.org/downloads/release/python-360">
-      <img alt="Made with: Python 3.6" src="https://img.shields.io/badge/python-3.6-blue.svg" target="_blank" />
+      <img alt="Made with: Python 3.9" src="https://img.shields.io/badge/python-3.9-blue.svg" target="_blank" />
     </a>
     <!--
     <a href="https://www.gnu.org/licenses/gpl-3.0">
@@ -52,8 +52,7 @@ Also this was inspired by u/jizcu over on r/unixporn. Thanks for the inspo!
 
 ### Built With
 
-* [Python 3.6](https://www.python.org/downloads/release/python-360/)
-* [Uptime](https://github.com/Cairnarvon/uptime)
+* [Python 3.9](https://www.python.org/downloads/release/python-390/)
 
 
 
@@ -68,15 +67,11 @@ To setup this script for usage follow these simple steps:
 ```sh
 git clone https://github.com/VladCuciureanu/catfetch.git && cd catfetch
 ```
-2. Install requirements:
-```sh
-pip3 install -r requirements.txt
-```
-3. Install wmctrl:
+2. Install wmctrl (Linux only):
 ```
 sudo apt install wmctrl
 ```
-4. Run catfetch.py:
+3. Run catfetch.py:
 ```sh
 python3 catfetch.py
 ```
