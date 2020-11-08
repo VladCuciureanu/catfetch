@@ -67,15 +67,11 @@ To setup this script for usage follow these simple steps:
 ```sh
 git clone https://github.com/VladCuciureanu/catfetch.git && cd catfetch
 ```
-2. Install requirements:
-```sh
-pip3 install -r requirements.txt
-```
-3. Install wmctrl:
+2. Install wmctrl (Linux only):
 ```
 sudo apt install wmctrl
 ```
-4. Run catfetch.py:
+3. Run catfetch.py:
 ```sh
 python3 catfetch.py
 ```
