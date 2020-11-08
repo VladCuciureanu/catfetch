@@ -53,7 +53,6 @@ Also this was inspired by u/jizcu over on r/unixporn. Thanks for the inspo!
 ### Built With
 
 * [Python 3.6](https://www.python.org/downloads/release/python-360/)
-* [Uptime](https://github.com/Cairnarvon/uptime)
 
 
 
