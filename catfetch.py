@@ -20,56 +20,52 @@ print(SystemInfoService.get_hostname())
 set_text_style(1)
 for _ in range(column_count // 2):
     print("~ ", end="")
-print()
+print("\n")
 reset_text_style()
 
-# Print actual data
-# OS
-set_text_style(2)
-print(str.ljust("OS", 8), end="  >>  ")
-set_text_style(3)
-print(str.ljust(SystemInfoService.get_os(), column_count - 14)[0:column_count - 14])
-# Kernel
-set_text_style(2)
-print(str.ljust("Kernel", 8), end="  >>  ")
-set_text_style(3)
-print(str.ljust(SystemInfoService.get_kernel(), column_count - 14)[0:column_count - 14])
-# Terminal
-set_text_style(2)
-print(str.ljust("Terminal", 8), end="  >>  ")
-set_text_style(3)
-print(str.ljust(SystemInfoService.get_terminal(), column_count - 14)[0:column_count - 14])
-# DE / WM
-set_text_style(2)
-print(str.ljust("DE / WM", 8), end="  >>  ")
-set_text_style(3)
-print(str.ljust(SystemInfoService.get_de_wm(), column_count - 14)[0:column_count - 14])
-# Hardware
-set_text_style(2)
-print(str.ljust("Hardware", 8), end="  >>  ")
-set_text_style(3)
-print(str.ljust(SystemInfoService.get_hardware(), column_count - 14)[0:column_count - 14])
-# CPU
-set_text_style(2)
-print(str.ljust("CPU", 8), end="  >>  ")
-set_text_style(3)
-print(str.ljust(SystemInfoService.get_cpu(), column_count - 14)[0:column_count - 14])
-# GPU
-set_text_style(2)
-print(str.ljust("GPU", 8), end="  >>  ")
-set_text_style(3)
-print(str.ljust(SystemInfoService.get_gpu(), column_count - 14)[0:column_count - 14])
-# Memory
-set_text_style(2)
-print(str.ljust("Memory", 8), end="  >>  ")
-set_text_style(3)
-print(str.ljust("{} MB / {} MB".format(SystemInfoService.get_used_memory(), SystemInfoService.get_total_memory()),
-                column_count - 14)[0:column_count - 14])
-# Uptime
-set_text_style(2)
-print(str.ljust("Uptime", 8), end="  >>  ")
-set_text_style(3)
-print(str.ljust(SystemInfoService.get_uptime(), column_count - 14)[0:column_count - 14])
+# Load ASCII file
+ascii_file = list(map(lambda x: x.replace("\n", ""), open("cat.ascii", "r").readlines()))
+max_line_length = -1
+for line in ascii_file:
+    max_line_length = max(len(line), max_line_length)
+
+# Load info into string list
+sys_header_list = ["OS", "Kernel", "Terminal", "DE / WM", "Hardware", "CPU", "GPU", "Memory", "Uptime"]
+sys_value_list = [
+    SystemInfoService.get_os(),
+    SystemInfoService.get_kernel(),
+    SystemInfoService.get_terminal(),
+    SystemInfoService.get_de_wm(),
+    SystemInfoService.get_hardware(),
+    SystemInfoService.get_cpu(),
+    SystemInfoService.get_gpu(),
+    "{} MB / {} MB".format(SystemInfoService.get_used_memory(), SystemInfoService.get_total_memory()),
+    SystemInfoService.get_uptime(),
+]
+
+# Calculate info offset
+sys_offset = 0
+if len(ascii_file) > len(sys_header_list):
+    sys_offset = int((len(ascii_file) - len(sys_header_list)) // 2)
+
+# Print drawing and info side by side
+for _ in range(0, max(len(ascii_file), len(sys_header_list))):
+    try:
+        set_text_style(5)
+        print(('{:' + str(max_line_length + 4) + 's}').format(ascii_file[_]), end="")
+    except IndexError:
+        print(str.ljust("", max_line_length + 4), end="")
+    try:
+        if _ - sys_offset >= 0:
+            set_text_style(2)
+            print(str.ljust(sys_header_list[_ - sys_offset], 8), end="  >>  ")
+            set_text_style(3)
+            print(str.ljust(sys_value_list[_ - sys_offset][0:column_count - max_line_length - 18],
+                            column_count - max_line_length - 18))
+        else:
+            print()
+    except IndexError:
+        print()
 
 # New line for cleanliness
 print()
