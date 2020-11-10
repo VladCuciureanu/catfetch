@@ -2,6 +2,16 @@ import sys
 from term_color_util import set_text_style, reset_text_style
 from system_info_service import SystemInfoService
 
+#################
+# CONFIGURATION #
+#################
+
+ASCII_FILE_NAME="cat.ascii"
+
+########################################################################
+# PLEASE DO NOT EDIT UNDER THIS LINE UNLESS YOU KNOW WHAT YOU'RE DOING #
+########################################################################
+
 # Calculating terminal width
 column_count = SystemInfoService.get_terminal_width()
 
@@ -24,7 +34,7 @@ print("\n")
 reset_text_style()
 
 # Load ASCII file
-ascii_file = list(map(lambda x: x.replace("\n", ""), open("cat.ascii", "r").readlines()))
+ascii_file = list(map(lambda x: x.replace("\n", ""), open(ASCII_FILE_NAME, "r").readlines()))
 max_line_length = -1
 for line in ascii_file:
     max_line_length = max(len(line), max_line_length)
