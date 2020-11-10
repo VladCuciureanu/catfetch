@@ -44,8 +44,10 @@
 
 <img src=".screenshots/2020-10-29-173238_610x340_scrot.png" alt="Logo" width="610" height="340">
 Not much to say about this project. Just a hacky system information display implementation.
-I didn't try to make this dependency-less at all. This was just a hacky thursday-night project.
+This was just a quick n' dirty implementation and I didn't try very hard to make the code clean.
 Also this was inspired by u/jizcu over on r/unixporn. Thanks for the inspo!
+
+
 
 ### Built With
 
