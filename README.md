@@ -1,6 +1,6 @@
 <!-- PROJECT LOGO -->
 <p align="center">
-  <a href="https://github.com/VladCuciureanu/catfetch">
+  <a href="https://github.com/VladCuciureanu/CatFetch">
     <img src="Logo.png" alt="Logo" width="160" height="160">
   </a>
   <h3 align="center">CatFetch</h3>
@@ -8,9 +8,9 @@
   <p align="center">
     Personalized system information prompt.
     <br />
-    <a href="https://github.com/VladCuciureanu/catfetch/issues">Report Bug</a>
+    <a href="https://github.com/VladCuciureanu/CatFetch/issues">Report Bug</a>
     ·
-    <a href="https://github.com/VladCuciureanu/catfetch/issues">Request Feature</a>
+    <a href="https://github.com/VladCuciureanu/CatFetch/issues">Request Feature</a>
     <br />
     <br />
     <a href="https://www.python.org/downloads/release/python-360">
@@ -64,7 +64,7 @@ To setup this script for usage follow these simple steps:
 
 1. Clone the repo:
 ```sh
-git clone https://github.com/VladCuciureanu/catfetch.git && cd catfetch
+git clone https://github.com/VladCuciureanu/CatFetch.git && cd CatFetch
 ```
 2. Install wmctrl (Linux only):
 ```
@@ -102,4 +102,4 @@ Distributed under the Unlicense License. See `LICENSE` for more information.
 
 Vlad CUCIUREANU - [@PollyWantsToDie](https://twitter.com/PollyWantsToDie) - vlad.c.cuciureanu@gmail.com\
 jizcu aka jessica-sh (Basically 90% of this project) - [@jizcu](https://github.com/jizcu)\
-Project Link: [https://github.com/VladCuciureanu/catfetch](https://github.com/VladCuciureanu/catfetch)
+Project Link: [https://github.com/VladCuciureanu/CatFetch](https://github.com/VladCuciureanu/CatFetch)
