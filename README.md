@@ -100,6 +100,6 @@ Distributed under the Unlicense License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Vlad CUCIUREANU - [@PollyWantsToDie](https://twitter.com/PollyWantsToDie) - vlad.c.cuciureanu@gmail.com\
+Vlad CUCIUREANU - [@VladinskiDev](https://twitter.com/VladinskiDev) - vlad.c.cuciureanu@gmail.com\
 jizcu aka jessica-sh (Basically 90% of this project) - [@jizcu](https://github.com/jizcu)\
 Project Link: [https://github.com/VladCuciureanu/CatFetch](https://github.com/VladCuciureanu/CatFetch)
